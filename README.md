@@ -1,5 +1,10 @@
 # GBC CleanI Customisation
 
+The goal of this theme was for a very clean look that's more spaced out.
+
+It uses not javascript and very few scss overrides, the bulk of the styling is done in the theme.scss.json file.
+
+
 NOTE: The GBC customization was done using the 1.00.53 release.
 
 
@@ -20,6 +25,9 @@ $ cd <folder cloned>
 $ make
 ```
 
-## Screenshots
+## Light
 ![ss1](https://github.com/neilm-fourjs/gbc_clean/raw/master/Screenshots/SS-1.png "SS1")
+
+## Dark
+![ss2](https://github.com/neilm-fourjs/gbc_clean/raw/master/Screenshots/SS-2.png "SS2")
 
