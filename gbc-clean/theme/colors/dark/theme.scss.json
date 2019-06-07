@@ -4,7 +4,7 @@
 	"palette-text-primary": "$mt-black",
 
 	"theme-primary-color": "$mt-white",
-	"theme-primary-emphasis-background-color": "$palette-primary-50",
+	"theme-primary-emphasis-background-color": "$palette-primary-800",
 	"theme-primary-faded-background-color": "$palette-primary-800",
 
 	"palette-secondary": "$mt-black",
@@ -21,5 +21,6 @@
 	"theme-field-background-color": "$mt-black-600",
 	"theme-field-disabled-background-color": "$mt-black-200",
 
-	"theme-sidebar-always-visible-min-width" : "999999px"
+  "mt-field-border-color": "$theme-secondary-faded-color"
+
 }
