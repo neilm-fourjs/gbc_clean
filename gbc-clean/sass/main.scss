@@ -17,7 +17,7 @@ BODY {
 }
 
 // get rid of bookmarks option
-.gbc_ApplicationHostMenuBookmarkWidget {
+.gbc_ChromeBarItemBookmarkWidget, .gbc_ApplicationHostMenuBookmarkWidget {
 	display: none !important;
 }
 
