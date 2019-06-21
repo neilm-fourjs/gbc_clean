@@ -29,7 +29,7 @@ BODY {
 .mt-button {
 	border: 1px solid $njm-button-border-color;
 	box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.14);
-	background-image: radial-gradient($mt-white, $mt-button-primary-background-color);
+	background-image: radial-gradient($mt-button-primary-emphasis-background-color, $mt-button-primary-background-color);
 }
 
 .gbc_ToolBarItemWidget {

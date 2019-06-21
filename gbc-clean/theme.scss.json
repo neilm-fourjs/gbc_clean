@@ -30,7 +30,7 @@
 
 	"mt-button-margin-ratio": ".25",
 	"mt-button-primary-emphasis-background-color": "$palette-secondary-50",
-	"mt-button-primary-background-color": "$palette-secondary-200",
+	"mt-button-primary-background-color": "$palette-secondary-300",
 	"mt-button-primary-color": "$palette-text-secondary",
 	"gbc-ButtonWidget-color": "$palette-text-secondary",
 	"njm-button-border-color": "$palette-primary-200",
