@@ -4,7 +4,7 @@ BODY {
 }
 
 // get rid of ugly empty folder nav butons
-.mt-tab-titles-bar .mt-tab-previous, .mt-tab-titles-bar .mt-tab-next{
+.mt-tab-titles-bar .mt-tab-previous, .mt-tab-titles-bar .mt-tab-next{ 
 	width: 1px; 
 }
 
@@ -26,6 +26,23 @@ BODY {
 	box-shadow: none;	
 }
 
+.mt-button {
+	border: 1px solid $njm-button-border-color;
+	box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.14);
+	background-image: radial-gradient($mt-white, $mt-button-primary-background-color);
+}
+
 .gbc_ToolBarItemWidget {
   padding: $njm-toolbar-padding;
+}
+
+.mt-progress{
+	border: 1px solid $njm-button-border-color;
+	padding: 1px;
+	margin: 2px
+}
+
+
+.zmdi-calendar-blank:before {
+	content: "\F0ED";
 }
