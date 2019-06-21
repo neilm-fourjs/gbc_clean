@@ -4,7 +4,7 @@ BODY {
 }
 
 // get rid of ugly empty folder nav butons
-.vanished { 
+.mt-tab-titles-bar .mt-tab-previous, .mt-tab-titles-bar .mt-tab-next{
 	width: 1px; 
 }
 

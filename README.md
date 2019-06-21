@@ -1,4 +1,4 @@
-# GBC CleanI Customisation
+# GBC Clean Customisation
 
 The goal of this theme was for a very clean look that's more spaced out.
 
