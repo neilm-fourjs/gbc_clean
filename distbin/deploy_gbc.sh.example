@@ -16,9 +16,9 @@ function localDeploy() {
 
 	# Define the command with custom .xcf file if it exists
 	if [ -e $FGLASDIR/etc/isv_as$VER.xcf ]; then
-  	CMD="gasadmin gbc -f $FGLASDIR/etc/isv_as$VER.xcf"
+		CMD="gasadmin gbc -f $FGLASDIR/etc/isv_as$VER.xcf"
 	else
-  	CMD="gasadmin gbc"
+		CMD="gasadmin gbc"
 	fi
 	
 	echo ""
@@ -56,7 +56,7 @@ VER=${2:-320}
 
 case $SRV in
 0)
-  HOST=local
+	HOST=local
 ;;
 1)
 	HOST=fourjs@myserver1.com
