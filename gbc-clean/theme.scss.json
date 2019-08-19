@@ -33,6 +33,7 @@
 	"mt-button-primary-emphasis-background-color": "$palette-secondary-50",
 	"mt-button-primary-background-color": "$palette-secondary-300",
 	"mt-button-primary-color": "$palette-text-secondary",
+	"mt-button-disabled-color": "$palette-secondary-500",
 	"njm-button-border-color": "$palette-primary-200",
 
 	"mt-progress-height": "20px",
