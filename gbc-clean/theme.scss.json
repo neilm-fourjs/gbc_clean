@@ -6,6 +6,7 @@
 	"theme-sidebar-always-visible-min-width": "1601px",
 	"theme-host-action-default-height": "26px",
 	"gbc-ChromeBarWidget-height": "26px",
+	"aui-mobileUI-default": "true",
 
 	"palette-primary": "$mt-blue-grey",
 	"palette-secondary": "$mt-grey",
