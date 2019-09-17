@@ -1,4 +1,6 @@
 {
+	"xxx-aui-mobileUI-default": "true",
+
 	"theme-font-family": "'Ubuntu, \"Droid Sans\", \"Segoe UI\", sans-serif'",
 	"theme-font-size-ratio": "1",
 	"theme-margin-ratio": "1",
@@ -6,7 +8,6 @@
 	"theme-sidebar-always-visible-min-width": "1601px",
 	"theme-host-action-default-height": "26px",
 	"gbc-ChromeBarWidget-height": "26px",
-	"aui-mobileUI-default": "true",
 
 	"palette-primary": "$mt-blue-grey",
 	"palette-secondary": "$mt-grey",
@@ -18,7 +19,6 @@
 	"theme-secondary-color": "$palette-text-secondary-100",
 	"theme-header-color": "$palette-secondary-200",
 
-	"gbc-TableWidget-unfocused-currentRow-background-color": "$theme-header-color",
 	"theme-currentrow-background-color": "$mt-light-blue-400",
 	"theme-currentrow-color": "$palette-text-secondary",
 
