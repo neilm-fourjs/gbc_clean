@@ -13,7 +13,7 @@
       "uses": ["colors/mobile"],
       "conditions":["isMobile"]
     },
-		{
+    {
       "name": "default",
       "title": "Clean Light",
       "conditions":["isBrowser"]
