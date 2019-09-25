@@ -3,28 +3,25 @@
   "themes": [
     {
       "name": "ur_default",
-      "title": "Native Light",
-      "uses": ["platform/ur", "platform/desktop", "colors/ur"]
+      "title": "UR Light",
+      "uses": ["colors/ur"],
+      "conditions":["isUR"]
+    },
+    {
+      "name": "mobile",
+      "title": "Mobile Light",
+      "uses": ["colors/mobile"],
+      "conditions":["isMobile"]
     },
 		{
       "name": "default",
       "title": "Clean Light",
-      "uses": ["platform/desktop"]
+      "conditions":["isBrowser"]
     },
     {
       "name": "dark",
       "title": "Clean Dark",
-      "uses": ["platform/desktop", "colors/dark"]
-    },
-    {
-      "name": "mobile",
-      "title": "Mobile",
-      "uses": ["platform/desktop", "colors/mobile"]
-    },
-    {
-      "name": "default_mobile",
-      "title": "Clean",
-      "uses": ["platform/mobile", "colors/mobile"]
+      "uses": ["colors/dark"]
     }
   ]
 }
