@@ -46,3 +46,7 @@ BODY {
 .zmdi-calendar-blank:before {
 	content: "\F0ED";
 }
+
+.gbc_ListViewRowWidget.currentRow {
+	background-color: $mt-button-primary-emphasis-background-color;
+}
