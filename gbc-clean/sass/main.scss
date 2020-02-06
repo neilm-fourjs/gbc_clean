@@ -50,3 +50,8 @@ BODY {
 .gbc_ListViewRowWidget.currentRow {
 	background-color: $mt-button-primary-emphasis-background-color;
 }
+
+// Fix problem with checkbox text alignment
+.gbc_CheckBoxWidget .label, .gbc_ThreeStateCheckBoxWidget .label {
+	display: contents;
+}

@@ -8,8 +8,8 @@
 	"theme-margin-ratio": "1",
 	"theme-combobox-padding": "0px",
 	"theme-sidebar-always-visible-min-width": "1601px",
-	"theme-host-action-default-height": "26px",
-	"gbc-ChromeBarWidget-height": "26px",
+	"theme-host-action-default-height": "32px",
+	"gbc-ChromeBarWidget-height": "32px",
 
 	"palette-primary": "$mt-blue-grey",
 	"palette-secondary": "$mt-grey",
