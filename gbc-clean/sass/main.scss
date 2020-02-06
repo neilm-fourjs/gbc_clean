@@ -55,3 +55,9 @@ BODY {
 .gbc_CheckBoxWidget .label, .gbc_ThreeStateCheckBoxWidget .label {
 	display: contents;
 }
+
+.gbc_style_curvedborder {
+	border: 1px solid $njm-button-border-color;
+	border-radius: 15px;
+	padding: 2px;
+}
