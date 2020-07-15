@@ -1,5 +1,5 @@
 {
-  "customizationSuffix": "Clean-1.00",
+  "customizationSuffix": "Clean-1.01",
   "themes": [
     {
       "name": "ur_default",
@@ -8,15 +8,14 @@
       "conditions":["isUR"]
     },
     {
-      "name": "mobile",
-      "title": "Mobile Light",
-      "uses": ["colors/mobile"],
-      "conditions":["isMobile"]
-    },
-    {
       "name": "default",
       "title": "Clean Light",
-      "conditions":["isBrowser"]
+			"uses": ["platform/browser", "platform/desktop", "common"]
+    },
+    {
+      "name": "default_mobile",
+      "title": "Default",
+      "uses": ["platform/browser", "platform/mobile", "common"]
     },
     {
       "name": "dark",

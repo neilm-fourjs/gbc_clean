@@ -3,7 +3,8 @@
 
 	"theme-disable-context-menu": false,
 
-	"theme-font-family": "'Ubuntu, \"Droid Sans\", \"Segoe UI\", sans-serif'",
+	"theme-font-family": "'Roboto, Helvetica, sans-serif'",
+	"theme-font-weight": "300",
 	"theme-font-size-ratio": "1",
 	"theme-margin-ratio": "1",
 	"theme-combobox-padding": "0px",
@@ -37,11 +38,11 @@
 	"mt-button-primary-background-color": "$palette-secondary-300",
 	"mt-button-primary-color": "$palette-text-secondary",
 	"mt-button-disabled-color": "$palette-secondary-500",
-	"njm-button-border-color": "$palette-primary-200",
 
 	"mt-progress-height": "20px",
 	"mt-progress-background-color": "$mt-white",
 	"mt-progress-color": "$mt-light-blue-400",
 
+	"njm-button-border-color": "$palette-primary-200",
 	"njm-toolbar-padding": "6px"
 }
