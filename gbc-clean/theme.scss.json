@@ -1,6 +1,4 @@
 {
-	"xaui-mobileUI-default": "true",
-
 	"theme-disable-context-menu": false,
 
 	"theme-font-family": "'Roboto, Helvetica, sans-serif'",
@@ -8,9 +6,10 @@
 	"theme-font-size-ratio": "1",
 	"theme-margin-ratio": "1",
 	"theme-combobox-padding": "0px",
-	"theme-sidebar-always-visible-min-width": "1601px",
+	"theme-sidebar-always-visible-min-width": "1921px",
 	"theme-host-action-default-height": "36px",
 	"gbc-ChromeBarWidget-height": "36px",
+	"gbc-ChromeBarWidget-visible-items": "about uploadStatus runtimeStatus settings",
 
 	"palette-primary": "$mt-blue-grey",
 	"palette-secondary": "$mt-grey",

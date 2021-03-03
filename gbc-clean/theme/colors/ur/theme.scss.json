@@ -1,5 +1,6 @@
 {
 	"theme-margin-ratio": "1",
+  "theme-font-size-ratio": ".8",
 	"theme-combobox-padding": "0px",
 	"theme-sidebar-always-visible-min-width": "1601px",
 	"mt-field-default-height": "22px",
@@ -7,6 +8,9 @@
 	"mt-field-border-width-right": "1px",
 	"mt-field-border-width-bottom": "1px",
 	"mt-field-border-width-left": "1px",
+
+	"gbc-TopMenuWidget-vertical-padding": "3px",
+	"gbc-TopMenuWidget-horizontal-padding": "10px",
 
 	"palette-primary": "$mt-blue-grey",
 	"palette-secondary": "$mt-grey",
