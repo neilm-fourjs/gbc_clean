@@ -31,12 +31,12 @@
 	"mt-field-border-width-left": "1px",
 	"mt-field-border-color": "$theme-primary-background-color",
 
-	"gbc-ButtonWidget-color": "$palette-text-secondary",
+	"gbc-ButtonWidget-color": "$mt-white",
 	"mt-button-margin-ratio": ".25",
-	"mt-button-primary-emphasis-background-color": "$palette-secondary-50",
-	"mt-button-primary-background-color": "$palette-secondary-300",
-	"mt-button-primary-color": "$palette-text-secondary",
-	"mt-button-disabled-color": "$palette-secondary-500",
+	"mt-button-primary-emphasis-background-color": "$mt-light-blue-700",
+	"mt-button-primary-background-color": "$mt-light-blue-600",
+	"mt-button-primary-color": "$mt-white",
+	"mt-button-disabled-color": "$mt-light-blue-100",
 
 	"mt-progress-height": "20px",
 	"mt-progress-background-color": "$mt-white",

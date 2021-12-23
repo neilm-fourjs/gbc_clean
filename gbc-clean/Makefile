@@ -5,13 +5,7 @@ include ../makefile.inc
 
 CUSTOMNAME=$(shell basename $(PWD))
 TARGET=$(DISTBIN)/$(CUSTOMNAME)-$(GENVER).zip
-
-ifeq "$(GENVER)" "400"
 CUSTOMIZATION=--customization customization/$(CUSTOMNAME)
-else
-CUSTOMIZATION=--customization=customization/$(CUSTOMNAME)
-endif
-
 
 all: theme/common $(TARGET)
 

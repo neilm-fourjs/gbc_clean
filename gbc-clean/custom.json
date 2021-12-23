@@ -2,12 +2,6 @@
   "customizationSuffix": "Clean-1.02",
   "themes": [
     {
-      "name": "ur_default",
-      "title": "UR Light",
-      "uses": ["colors/ur"],
-      "conditions":["isUR"]
-    },
-    {
       "name": "default",
       "title": "Clean Light",
 			"uses": ["platform/browser", "platform/desktop", "common"]
@@ -16,6 +10,12 @@
       "name": "default_mobile",
       "title": "Default",
       "uses": ["platform/browser", "platform/mobile", "common"]
+    },
+    {
+      "name": "ur_default",
+      "title": "UR Light",
+      "uses": ["colors/ur"],
+      "conditions":["isUR"]
     },
     {
       "name": "dark",
