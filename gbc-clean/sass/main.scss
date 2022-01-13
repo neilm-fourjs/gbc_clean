@@ -1,12 +1,6 @@
 
 BODY {
 	-webkit-font-smoothing: antialiased;
-	font-weight: $theme-font-weight;
-}
-
-// get rid of ugly empty folder nav butons
-.mt-tab-titles-bar .mt-tab-previous, .mt-tab-titles-bar .mt-tab-next{ 
-	width: 1px; 
 }
 
 // get rid of ugly empty toolbar nav butons
@@ -22,31 +16,37 @@ BODY {
 	display: none !important;
 }
 
+// get rid of extra 32px padding on the left ?
+.gbc_ChromeBarWidget.mt-toolbar .mt-toolbar-title {
+	padding-left: 0px;
+}￼
+
 // remove the box shadows from fields.
 .mt-field {
 	box-shadow: none;	
 }
 
-.mt-tab-titles-container[__FolderWidget=top] .mt-tab-title.mt-tab-current {
-	border-bottom: 2px solid $mt-button-primary-background-color;
-}
-
+// make current field stand out more.
 .mt-field.gbc_Focus {
 	border-left: 1px solid $mt-field-border-color;
 	border-right: 1px solid $mt-field-border-color;
 	border-top: 1px solid $mt-field-border-color;
 	border-bottom: 2px solid $mt-button-primary-background-color;
+	background-color: $palette-primary-50;
 	box-shadow: none;	
 }
 
+// improve look of buttons
 .mt-button {
 	border: 1px solid $njm-button-border-color;
 	box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.14);
+	padding-right: 15px;
 }
 .gbc_ButtonWidget.gbc_Focus > .mt-button {
 	background-color: $mt-button-primary-emphasis-background-color;
 }
 
+// try and make the buttonEdit button actually look like it's part of the Edit field
 .gbc_ButtonEditWidget, .gbc_DummyButtonEditWidget {
 	.mt-button {
 		background-color: transparent;
@@ -54,6 +54,7 @@ BODY {
 		border-top: 1px solid $mt-field-border-color;
 		border-bottom: 1px solid $mt-field-border-color;
 		border-right: 1px solid $mt-field-border-color;
+		padding-right: 0px;
 		.textimage > .gbc_imageContainer > .gbc_ImageWidget {
 			fill: $palette-text-secondary;
 		}
@@ -66,29 +67,43 @@ BODY {
 	border-top: 1px solid $mt-field-border-color;
 	border-bottom: 2px solid $mt-button-primary-background-color;
 	box-shadow: none;	
+	background-color: $palette-primary-50;
 }
 
 .gbc_ButtonEditWidget .mt-field, .gbc_DummyButtonEditWidget .mt-field {
 	border-right: 0px solid $mt-field-border-color;
 }
 
-
+// change the toolbar padding to make the toolbar a little spaced out.
 .gbc_ToolBarItemWidget {
 	padding: $njm-toolbar-padding;
 }
 
+// make the programbar visible but adding a border.
 .mt-progress{
 	border: 1px solid $njm-button-border-color;
 	padding: 1px;
 	margin: 2px
 }
 
-.gbc_ListViewWidget .currentRow {
-	background-color: $theme-currentrow-background-color;
-	color: $theme-currentrow-color;
-	fill: $theme-currentrow-color;
+// by default the ListView has no current row highlight ?
+.gbc_ListViewWidget {
+	&.gbc_Focus .currentRow {
+		background-color: $gbc-TableWidget-currentRow-background-color !important;
+		color: $gbc-TableWidget-currentRow-color !important;
+		fill: $gbc-TableWidget-currentRow-color;
+	}
+	&:not(.gbc_Focus) .currentRow {
+		background-color: $gbc-TableWidget-unfocused-currentRow-background-color !important;
+		color: $gbc-TableWidget-unfocused-currentRow-color !important;
+		fill: $gbc-TableWidget-unfocused-currentRow-color;
+	}
+}
+.gbc_ListViewRowWidget > .gbc_ListViewRowImage > .gbc_ImageWidget {
+	padding: 2px;
 }
 
+// changed the calendar widget icon
 .zmdi-calendar-blank:before {
 	content: "\F0ED";
 }
@@ -98,13 +113,42 @@ BODY {
 	display: contents;
 }
 
+// make the Group title bar visible and match the folder accordian tab headings
+.gbc_GroupTitleWidget {
+	background-color: $theme-header-color;
+	> .gbc-label-text-container {
+		padding-left: 5px;
+	}
+}
+
+// get rid of ugly empty folder nav butons
+.mt-tab-titles-bar .mt-tab-previous, .mt-tab-titles-bar .mt-tab-next{ 
+	width: 1px; 
+}
+
+// make the Page tabs visible and match the folder accordian tab headings
+.mt-tab-titles-bar[__FolderWidget] .mt-tab-title {
+	background-color: $theme-header-color;
+}
+
+// make the dialog window title bar more visible and like a window title bar.
+.mt-dialog-header {
+	background-color: $mt-toolbar-background-color;
+	color: $mt-toolbar-color;
+	fill: $mt-toolbar-color;
+}
+
+// reduce the excessive padding on the dialog window title bar.
+.gbc_ModalMenuDialog > .mt-dialog-pane {
+	padding: 5px;
+}
+
+
+/////////////////////////////////////////////////////////////////
+// NJM Demos specific change
 .gbc_style_curvedborder {
 	border: 1px solid $njm-button-border-color;
 	border-radius: 15px;
 	padding: 2px;
 }
 
-.gbc_GroupTitleWidget {
-	background-color: $palette-primary-600;
-	color: $mt-white;
-}
