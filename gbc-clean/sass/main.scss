@@ -150,6 +150,11 @@ BODY {
 	padding: 5px;
 }
 
+/////////////////////////////////////////////////////////////////
+// Make the loadbar at the top of the screen more visible
+.loading-bar {
+	height: 5px;
+}
 
 /////////////////////////////////////////////////////////////////
 // NJM Demos specific change
@@ -158,4 +163,6 @@ BODY {
 	border-radius: 15px;
 	padding: 2px;
 }
+
+
 
