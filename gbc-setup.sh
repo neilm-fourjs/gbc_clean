@@ -3,7 +3,7 @@
 # This script attempts to setup a GBC dev environment
 #
 # Example:
-# ./gbc-setup400.sh 
+# ./gbc-setup.sh 
 
 set_default_build()
 {
@@ -20,7 +20,7 @@ BLD=$2
 NVMVER=12.18.4
 
 if [ -z "$GENVER" ]; then
-	echo "GENVER is not set!"
+	echo "GENVER is not set!  should be: 320 or 400"
 	exit 1
 fi
 
@@ -46,12 +46,12 @@ fi
 
 if [ -z $VER ]; then
 	echo "VER is not set! aborting!"
-	echo "./gbc-setup.sh 1.00.38 build201707261501"
+	echo "./gbc-setup.sh 1.00.60 build202110051556"
 	exit 1
 fi
 if [ -z $BLD ]; then
 	echo "BLD is not set! aborting!"
-	echo "./gbc-setup.sh 1.00.38 build201707261501"
+	echo "./gbc-setup.sh 1.00.60 build202110051556"
 	exit 1
 fi
 

@@ -5,7 +5,10 @@ The goal of this theme was for a very clean look that's more spaced out.
 It uses not javascript and very few scss overrides, the bulk of the styling is done in the theme.scss.json file.
 
 
-NOTE: The GBC customization was done using the 1.00.53 release.
+NOTE: The setup scripts and makefile need GENVER to be set to 320 or 400 for Genero 3.20 or 4.00
+
+
+NOTE: The GBC customization was originally done using the 1.00.53 release and updated / revised for 1.00.60
 
 
 ## Folders
@@ -17,7 +20,7 @@ NOTE: The GBC customization was done using the 1.00.53 release.
 ## Building
 This was written and tested on Linux. The Makefile and Script are to setup additional folders and to build the GBC.
 * 1. The GBC prerequisites building ( grunt nodejs git ) plus: make & zip installed
-* 2. Set GBCPROJECTDIR=<folder containing fjs-gbc-1.00.53-build201905131540-project.zip>
+* 2. Set GBCPROJECTDIR=<folder containing fjs-gbc project.zip file>
  
 ```
 $ git clone <repo url>
