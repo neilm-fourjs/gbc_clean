@@ -1,4 +1,7 @@
 {
+	"theme-disable-context-menu": false,
+	"theme-disable-ending-popup": true,
+
 	"theme-margin-ratio": "1",
   "theme-font-size-ratio": ".8",
 	"theme-combobox-padding": "0px",
