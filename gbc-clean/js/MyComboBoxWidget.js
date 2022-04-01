@@ -64,12 +64,12 @@ modulum('MyComboBoxWidget', ['ComboBoxWidget','ComboBoxWidgetBase', 'WidgetFacto
          * @param {boolean} active the active state
          */
         setWidgetMode: function(mode, active) {
-					if ( gbc.ThemeService.getValue("gbc-construct-legacy") ? 1 : 0 ) {
-						this._allowMultipleValues = false;
-					}
-					else {
-          	this._allowMultipleValues = mode === "Construct";
-					}
+          if ( gbc.ThemeService.getValue("gbc-construct-legacy") ? 1 : 0 ) {
+            this._allowMultipleValues = false;
+          }
+          else {
+            this._allowMultipleValues = mode === "Construct";
+          }
           this._dropDown.allowMultipleChoices(this._allowMultipleValues);
           this._updateEditState();
           this._updateTextTransform();
