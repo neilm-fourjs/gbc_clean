@@ -1,5 +1,6 @@
 {
 	"theme-disable-context-menu": false,
+	"gbc-construct-legacy": false,
 
 	"theme-font-family": "'Roboto, Helvetica, sans-serif'",
 	"theme-font-size-ratio": ".9",
