@@ -66,8 +66,7 @@ modulum('MyComboBoxWidget', ['ComboBoxWidget','ComboBoxWidgetBase', 'WidgetFacto
         setWidgetMode: function(mode, active) {
           if ( gbc.ThemeService.getValue("gbc-construct-legacy") ? 1 : 0 ) {
             this._allowMultipleValues = false;
-          }
-          else {
+          } else {
             this._allowMultipleValues = mode === "Construct";
           }
           this._dropDown.allowMultipleChoices(this._allowMultipleValues);
