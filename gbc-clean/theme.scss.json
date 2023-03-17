@@ -1,6 +1,5 @@
 {
 	"theme-disable-context-menu": false,
-	"gbc-construct-legacy": false,
 
 	"theme-font-family": "'Roboto, Helvetica, sans-serif'",
 	"theme-font-size-ratio": ".9",
@@ -12,17 +11,19 @@
 	"gbc-ChromeBarWidget-height": "36px",
 	"gbc-ChromeBarWidget-visible-items": "about uploadStatus runtimeStatus settings",
 
+	"theme-message-display-time": 10,
+	"theme-error-display-time": 20,
+
 	"palette-primary": "$mt-deep-purple",
 	"palette-secondary": "$mt-grey",
 	"palette-text-secondary": "$mt-black",
+
 	"theme-primary-background-color": "$palette-primary-800",
 	"theme-primary-emphasis-background-color": "$palette-primary-900",
 	"theme-primary-faded-background-color": "$palette-primary-100",
 	"theme-primary-color": "$palette-secondary-50",
 	"theme-secondary-color": "$palette-text-secondary-100",
 	"theme-header-color": "$palette-secondary-200",
-
-
 	"theme-currentrow-background-color": "$palette-primary-400",
 	"theme-currentrow-color": "$mt-white",
 

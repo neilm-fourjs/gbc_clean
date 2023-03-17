@@ -67,13 +67,13 @@ modulum('MyDateEditWidget', ['DateEditWidget'],
             this._buttonOk = cls.WidgetFactory.createWidget('Button', this.getBuildParameters());
             this._buttonOk.setParentWidget(this);
             this._buttonOk.addClass('gbc_DateEditButton');
-            this._buttonOk.setText(i18next.t('gwc.button.ok'));
+            this._buttonOk.setText(i18next.t('gwc.button.okay'));
             this._buttonOk.when(context.constants.widgetEvents.click, this._onOk.bind(this));
 
             this._buttonToday = cls.WidgetFactory.createWidget('Button', this.getBuildParameters());
             this._buttonToday.setParentWidget(this);
             this._buttonToday.addClass('gbc_DateEditButton');
-            this._buttonToday.setText('Today');
+            this._buttonToday.setText(i18next.t('gwc.button.today'));
             this._buttonToday.when(context.constants.widgetEvents.click, this._onToday.bind(this));
 
             this._dropDown.onOpen(this._onCalendarTypeModalOpen.bind(this));
