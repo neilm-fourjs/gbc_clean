@@ -4,6 +4,8 @@ The goal of this theme was for a very clean look that's more spaced out.
 
 It uses not javascript and very few scss overrides, the bulk of the styling is done in the theme.scss.json file.
 
+This also added a 'Today' button to the DATEEDIT calendar.
+
 
 NOTE: The setup scripts and makefile need GENVER to be set to 320 or 400 for Genero 3.20 or 4.00
 
@@ -18,6 +20,7 @@ NOTE: The GBC customization was originally done using the 1.00.53 release and up
 
 
 ## Building
+Current requires: nvm use 16.0.0
 This was written and tested on Linux. The Makefile and Script are to setup additional folders and to build the GBC.
 * 1. The GBC prerequisites building ( grunt nodejs git ) plus: make & zip installed
 * 2. Set GBCPROJECTDIR=<folder containing fjs-gbc project.zip file>

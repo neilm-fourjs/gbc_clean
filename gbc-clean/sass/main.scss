@@ -110,11 +110,6 @@ BODY {
 	padding: 2px;
 }
 
-// changed the calendar widget icon
-.zmdi-calendar-blank:before {
-	content: "\F0ED";
-}
-
 // Fix problem with checkbox text alignment
 .gbc_CheckBoxWidget .label, .gbc_ThreeStateCheckBoxWidget .label {
 	display: contents;
@@ -164,5 +159,24 @@ BODY {
 	padding: 2px;
 }
 
+.gbc_GroupWidgetContainer {
+  box-shadow: none;
+}
+
+// Combobox
+.zmdi-menu-down:before, .toggle[__ComboBoxWidget]:before, .toggle.dd-open[__ComboBoxWidget]:before {
+	content: "\F0140";
+	font-size: 20px;
+}
+
+// Calendar
+.zmdi-calendar-blank:before {
+	content: "\F0E17";
+	font-size: 20px;
+}
+
+.pika-title {
+	padding: 2px;
+}
 
 
