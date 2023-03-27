@@ -6,6 +6,7 @@
 	"theme-primary-color": "$mt-white",
 	"theme-primary-emphasis-background-color": "$palette-primary-800",
 	"theme-primary-faded-background-color": "$palette-primary-800",
+	"theme-primary-background-color": "$palette-primary-300",
 
 	"palette-secondary": "$mt-black",
 	"palette-text-secondary": "$mt-grey",
@@ -15,8 +16,8 @@
 	"theme-secondary-background-color": "$palette-secondary-400",
 	"theme-secondary-alternative-background-color": "$palette-secondary-300",
 
-	"theme-header-color": "$palette-primary-900",
-	"theme-separator-color": "$palette-secondary-800",
+	"theme-header-color": "$palette-primary-700",
+	"theme-separator-color": "$palette-secondary-900",
 
 	"theme-field-background-color": "$mt-black-600",
 	"theme-field-disabled-background-color": "$mt-black-200",
@@ -24,9 +25,11 @@
   "mt-field-border-color": "$theme-secondary-faded-color",
 
 	"gbc-TableWidget-unfocused-currentRow-background-color": "$theme-header-color",
+	"gbc-TableWidget-even-row-background-color": "$palette-primary-800",
+	"gbc-TableWidget-odd-row-background-color": "$mt-black",
 	"theme-currentrow-background-color": "$mt-light-blue-400",
 	"theme-currentrow-color": "$theme-secondary-color",
-	
+	"mt-field-readonly-background-color": "$palette-primary-800",	
 	"mt-field-border-color": "$theme-primary-background-color",
 	
 	"mt-button-primary-emphasis-background-color": "$palette-secondary-300",
