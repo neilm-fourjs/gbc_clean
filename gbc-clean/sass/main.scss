@@ -131,6 +131,10 @@ BODY {
 // make the Page tabs visible and match the folder accordian tab headings
 .mt-tab-titles-bar[__FolderWidget] .mt-tab-title {
 	background-color: $theme-header-color;
+	opacity: .6;
+}
+.mt-tab-titles-bar[__FolderWidget] .mt-tab-title.mt-tab-current {
+	opacity: 1;
 }
 
 // make the dialog window title bar more visible and like a window title bar.
