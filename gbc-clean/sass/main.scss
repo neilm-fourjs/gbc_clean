@@ -57,8 +57,8 @@ BODY {
 .gbc_ButtonEditWidget, .gbc_DummyButtonEditWidget {
 	.mt-button {
 		background-color: transparent;
-		border-left: 0px solid $mt-field-border-color;
 		border-top: 1px solid $mt-field-border-color;
+		border-left: 0px solid $mt-field-border-color;
 		border-bottom: 1px solid $mt-field-border-color;
 		border-right: 1px solid $mt-field-border-color;
 		padding-right: 0px;
@@ -110,17 +110,35 @@ BODY {
 	padding: 2px;
 }
 
+// default table doesn't show up well if it's in a group or folder page
+.gbc_RTableWidget[viewType="classic"] {
+// Can't use varible for variables!!
+  --headerHeight: 1.6em;
+  border-top: $mt-field-border-color solid 1px;
+  border-left: $mt-field-border-color solid 1px;
+}
+
 // Fix problem with checkbox text alignment
 .gbc_CheckBoxWidget .label, .gbc_ThreeStateCheckBoxWidget .label {
 	display: contents;
 }
 
 // make the Group title bar visible and match the folder accordian tab headings
+.gbc_GroupWidget {
+	//border: $mt-field-border-color solid 1px;
+	border-radius: 0.2rem;
+	padding: 0px;
+}
 .gbc_GroupTitleWidget {
-	background-color: $theme-header-color;
-	> .gbc-label-text-container {
+//	background-color: $theme-header-color;
+	border-bottom: $mt-field-border-color solid 1px;
+	.gbc-label-text-container {
 		padding-left: 5px;
-	}
+    line-height: 1.6em;
+  }
+  .zmdi-hc-2x {
+    font-size: 1.5em;
+  }
 }
 
 // get rid of ugly empty folder nav butons
@@ -159,7 +177,7 @@ BODY {
 // NJM Demos specific change
 .gbc_style_curvedborder {
 	border: 1px solid $njm-button-border-color;
-	border-radius: 15px;
+	border-radius: 0.2rem;
 	padding: 2px;
 }
 

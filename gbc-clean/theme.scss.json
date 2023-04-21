@@ -1,18 +1,32 @@
 {
 	"theme-disable-context-menu": false,
 
-	"theme-font-family": "'Roboto, Helvetica, sans-serif'",
-	"theme-font-size-ratio": ".9",
-	"theme-margin-ratio": "1",
-	"theme-combobox-padding": "0px",
-	"theme-sidebar-always-visible-min-width": "1921px",
-	"theme-host-action-default-height": "36px",
-	"theme-field-default-height": "32px",
-	"gbc-ChromeBarWidget-height": "36px",
+	"gbc-ChromeBarWidget-height": "22px",
 	"gbc-ChromeBarWidget-visible-items": "about uploadStatus runtimeStatus settings",
 
+	"theme-font-family": "'Roboto, Helvetica, sans-serif'",
+	"theme-font-size-ratio": ".9",
+	"theme-margin-ratio": ".8",
+	"theme-combobox-padding": "0px",
+	"theme-sidebar-always-visible-min-width": "1921px",
+	"theme-host-action-default-height": "26px",
+	"theme-field-default-height": "26px",
 	"theme-message-display-time": 10,
 	"theme-error-display-time": 20,
+
+  "gbc-TableWidget-margin-ratio": ".4",
+  "gbc-TopMenuWidget-vertical-padding": "4px",
+  "gbc-TopMenuWidget-horizontal-padding": "8px",
+  "gbc-TopMenuWidget-line-height": "18px",
+
+	"mt-field-border-width-top": "1px",
+	"mt-field-border-width-right": "1px",
+	"mt-field-border-width-bottom": "1px",
+	"mt-field-border-width-left": "1px",
+	"mt-button-margin-ratio": ".6",
+	"mt-progress-height": "20px",
+
+	"njm-toolbar-padding": "6px",
 
 	"palette-primary": "$mt-deep-purple",
 	"palette-secondary": "$mt-grey",
@@ -27,14 +41,9 @@
 	"theme-currentrow-background-color": "$palette-primary-400",
 	"theme-currentrow-color": "$mt-white",
 
-	"mt-field-border-width-top": "1px",
-	"mt-field-border-width-right": "1px",
-	"mt-field-border-width-bottom": "1px",
-	"mt-field-border-width-left": "1px",
 	"mt-field-border-color": "$theme-primary-background-color",
 
 	"gbc-ButtonWidget-color": "$mt-white",
-	"mt-button-margin-ratio": ".25",
 	"mt-button-primary-emphasis-background-color": "$palette-primary-700",
 	"mt-button-primary-background-color": "$palette-primary-600",
 	"mt-button-primary-color": "$mt-white",
@@ -42,10 +51,8 @@
 
 	"mt-toolbar-background-color": "$palette-primary-900",
 
-	"mt-progress-height": "20px",
 	"mt-progress-background-color": "$mt-white",
 	"mt-progress-color": "$palette-primary-400",
 
-	"njm-button-border-color": "$palette-primary-200",
-	"njm-toolbar-padding": "6px"
+	"njm-button-border-color": "$palette-primary-200"
 }
