@@ -3,7 +3,11 @@ BODY {
 	-webkit-font-smoothing: antialiased;
 }
 
-// get rid of ugly empty toolbar nav butons
+.gbc_SessionEndWidget {
+	background: linear-gradient( $gbc-primary-color, $gbc-secondary-background-color );
+}
+
+// get rid of empty toolbar nav butons
 .gbc_ToolBarWidget .mt-tab-previous, .gbc_ToolBarWidget .mt-tab-next {
 	width: 20px; 
 	&.vanished { 
@@ -11,48 +15,37 @@ BODY {
 	}
 }
 
-// get rid of bookmarks option
-.gbc_ChromeBarItemBookmarkWidget, .gbc_ApplicationHostMenuBookmarkWidget {
-	display: none !important;
-}
-
 // get rid of extra 32px padding on the left ?
 .gbc_ChromeBarWidget.mt-toolbar .mt-toolbar-title {
-	padding-left: 0px;
+	padding-left: 2px;
 }￼
 
+// FIELDS ////////////////////////////////////////////////////////////////////////////
 // remove the box shadows from fields.
 .mt-field {
-	box-shadow: none;	
+	box-shadow: none;
 }
-
 // make current field stand out more.
 .mt-field.gbc_Focus {
 	border-left: 1px solid $mt-field-border-color;
 	border-right: 1px solid $mt-field-border-color;
 	border-top: 1px solid $mt-field-border-color;
 	border-bottom: 2px solid $mt-button-primary-background-color;
-	background-color: $palette-primary-50;
-	box-shadow: none;	
+	box-shadow: none;
 }
-
-// improve look of buttons
-.mt-button {
-	border: 1px solid $njm-button-border-color;
-	box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.14);
+// Combobox
+.zmdi-menu-down:before, .toggle[__ComboBoxWidget]:before, .toggle.dd-open[__ComboBoxWidget]:before {
+	content: "\F0140";
+	font-size: 20px;
 }
-.gbc_ButtonWidget {
-	&.hasText .mt-button {
-		padding-right: 5px;
-	}
+// Calendar
+.zmdi-calendar-blank:before {
+	content: "\F0E17";
+	font-size: 20px;
 }
-[__ButtonWidget].hasImage span[__ButtonWidget] {
-	margin-left: 0px;
+.pika-title {
+	padding: 2px;
 }
-.gbc_ButtonWidget.gbc_Focus > .mt-button {
-	background-color: $mt-button-primary-emphasis-background-color;
-}
-
 // try and make the buttonEdit button actually look like it's part of the Edit field
 .gbc_ButtonEditWidget, .gbc_DummyButtonEditWidget {
 	.mt-button {
@@ -67,32 +60,64 @@ BODY {
 		}
 	}
 }
-
 .gbc_ButtonEditWidget.gbc_Focus > .gbc_EditWidget, .gbc_DummyButtonEditWidget.gbc_Focus > .gbc_EditWidget {
 	border-right: 0px solid $mt-field-border-color;
 	border-left: 1px solid $mt-field-border-color;
 	border-top: 1px solid $mt-field-border-color;
 	border-bottom: 2px solid $mt-button-primary-background-color;
-	box-shadow: none;	
+	box-shadow: none;
 	background-color: $palette-primary-50;
 }
-
 .gbc_ButtonEditWidget .mt-field, .gbc_DummyButtonEditWidget .mt-field {
 	border-right: 0px solid $mt-field-border-color;
 }
+//////////////////////////////////////////////////////////////////////////////////////
 
-// change the toolbar padding to make the toolbar a little spaced out.
-.gbc_ToolBarItemWidget {
-	padding: $njm-toolbar-padding;
+// BUTTONS	//////////////////////////////////////////////////////////////////////////
+// improve look of buttons
+.mt-button {
+	border: 1px solid $palette-primary;
+	box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.14);
 }
-
-// make the programbar visible but adding a border.
-.mt-progress{
-	border: 1px solid $njm-button-border-color;
-	padding: 1px;
-	margin: 2px
+.gbc_ButtonWidget {
+	&.hasText .mt-button {
+		padding-right: 5px;
+	}
 }
+[__ButtonWidget].hasImage span[__ButtonWidget] {
+	margin-left: 0px;
+}
+.gbc_ButtonWidget.gbc_Focus > .mt-button {
+	background-color: $mt-button-primary-emphasis-background-color;
+}
+//////////////////////////////////////////////////////////////////////////////////////
 
+// FOLDERS ///////////////////////////////////////////////////////////////////////////
+// get rid of ugly empty folder nav butons
+.mt-tab-previous, .mt-tab-next {
+	&.vanished {
+		display: none;
+	}
+}
+// Reduce padding on Folder
+.gbc_FolderWidget {
+	padding: 2px;
+}
+// Reduce the height of th Folder tab heading bar.
+.mt-tab-titles-bar[__FolderWidget=top], .mt-tab-titles-bar[__FolderWidget=bottom] {
+	height: 26px;
+}
+// make the Page tabs visible and match the folder accordian tab headings
+.mt-tab-titles-bar[__FolderWidget] .mt-tab-title {
+	background-color: $theme-header-color;
+	opacity: .6;
+}
+.mt-tab-titles-bar[__FolderWidget] .mt-tab-title.mt-tab-current {
+	opacity: 1;
+}
+//////////////////////////////////////////////////////////////////////////////////////
+
+// TABLES ////////////////////////////////////////////////////////////////////////////
 // by default the ListView has no current row highlight ?
 .gbc_ListViewWidget {
 	&.gbc_Focus .currentRow {
@@ -109,96 +134,75 @@ BODY {
 .gbc_ListViewRowWidget > .gbc_ListViewRowImage > .gbc_ImageWidget {
 	padding: 2px;
 }
-
 // default table doesn't show up well if it's in a group or folder page
 .gbc_RTableWidget[viewType="classic"] {
 // Can't use varible for variables!!
-  --headerHeight: 1.6em;
-  border-top: $mt-field-border-color solid 1px;
-  border-left: $mt-field-border-color solid 1px;
+	--headerHeight: 1.6em;
+	border-top: $mt-field-border-color solid 1px;
+	border-left: $mt-field-border-color solid 1px;
 }
+//////////////////////////////////////////////////////////////////////////////////////
 
-// Fix problem with checkbox text alignment
-.gbc_CheckBoxWidget .label, .gbc_ThreeStateCheckBoxWidget .label {
-	display: contents;
-}
-
+// GROUPS ////////////////////////////////////////////////////////////////////////////
 // make the Group title bar visible and match the folder accordian tab headings
+.gbc_GroupWidgetContainer {
+	box-shadow: none;
+}
 .gbc_GroupWidget {
 	//border: $mt-field-border-color solid 1px;
 	border-radius: 0.2rem;
 	padding: 0px;
+	background-color: transparent;
 }
 .gbc_GroupTitleWidget {
 //	background-color: $theme-header-color;
 	border-bottom: $mt-field-border-color solid 1px;
+	color: $mt-field-border-color;
+	margin-bottom: 2px;
 	.gbc-label-text-container {
 		padding-left: 5px;
-    line-height: 1.6em;
-  }
-  .zmdi-hc-2x {
-    font-size: 1.5em;
-  }
+		line-height: 1.3em;
+		font-size: 1.2em;
+	}
+	.zmdi-hc-2x {
+		font-size: 1.5em;
+	}
 }
+//////////////////////////////////////////////////////////////////////////////////////
 
-// get rid of ugly empty folder nav butons
-.mt-tab-titles-bar .mt-tab-previous, .mt-tab-titles-bar .mt-tab-next{ 
-	width: 1px; 
-}
-
-// make the Page tabs visible and match the folder accordian tab headings
-.mt-tab-titles-bar[__FolderWidget] .mt-tab-title {
-	background-color: $theme-header-color;
-	opacity: .6;
-}
-.mt-tab-titles-bar[__FolderWidget] .mt-tab-title.mt-tab-current {
-	opacity: 1;
-}
-
+// DIALOG WINDOWS ////////////////////////////////////////////////////////////////////
 // make the dialog window title bar more visible and like a window title bar.
 .mt-dialog-header {
 	background-color: $mt-toolbar-background-color;
 	color: $mt-toolbar-color;
 	fill: $mt-toolbar-color;
 }
-
 // reduce the excessive padding on the dialog window title bar.
-.gbc_ModalMenuDialog > .mt-dialog-pane {
-	padding: 5px;
+.gbc_ModalWidget .mt-dialog-header {
+	padding: 5px 2px 5px 2px;
 }
+.gbc_ModalMenuDialog {
+	.mt-dialog-header {
+		padding: 2px !important;
+	}
+	.mt-dialog-pane {
+		padding: 2px !important;
+		.mt-dialog-content {
+			padding: 4px !important;
+		}
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////////////
+// MISC ////////////////////////////////////////////////////////////////////////////
+// make the programbar visible but adding a border.
+.mt-progress { 
+	border: 1px solid $palette-primary;
+	padding: 1px;
+	margin: 2px
+}
 // Make the loadbar at the top of the screen more visible
 .loading-bar {
 	height: 5px;
 }
-
-/////////////////////////////////////////////////////////////////
-// NJM Demos specific change
-.gbc_style_curvedborder {
-	border: 1px solid $njm-button-border-color;
-	border-radius: 0.2rem;
-	padding: 2px;
-}
-
-.gbc_GroupWidgetContainer {
-  box-shadow: none;
-}
-
-// Combobox
-.zmdi-menu-down:before, .toggle[__ComboBoxWidget]:before, .toggle.dd-open[__ComboBoxWidget]:before {
-	content: "\F0140";
-	font-size: 20px;
-}
-
-// Calendar
-.zmdi-calendar-blank:before {
-	content: "\F0E17";
-	font-size: 20px;
-}
-
-.pika-title {
-	padding: 2px;
-}
-
 

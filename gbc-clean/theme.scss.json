@@ -14,10 +14,10 @@
 	"theme-message-display-time": 10,
 	"theme-error-display-time": 20,
 
-  "gbc-TableWidget-margin-ratio": ".4",
-  "gbc-TopMenuWidget-vertical-padding": "4px",
-  "gbc-TopMenuWidget-horizontal-padding": "8px",
-  "gbc-TopMenuWidget-line-height": "18px",
+	"gbc-TableWidget-margin-ratio": ".4",
+	"gbc-TopMenuWidget-vertical-padding": "4px",
+	"gbc-TopMenuWidget-horizontal-padding": "8px",
+	"gbc-TopMenuWidget-line-height": "18px",
 
 	"mt-field-border-width-top": "1px",
 	"mt-field-border-width-right": "1px",
