@@ -17,7 +17,5 @@
 
 	"mt-button-margin-ratio": ".25",
 
-	"mt-progress-height": "20px",
-
-	"njm-toolbar-padding": "6px"
+	"mt-progress-height": "20px"
 }

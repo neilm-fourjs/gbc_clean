@@ -4,11 +4,12 @@
 	"palette-text-primary": "$mt-black",
 
 	"theme-primary-color": "$mt-white",
-	"theme-primary-emphasis-background-color": "$palette-primary-800",
+	"theme-primary-emphasis-background-color": "$palette-primary-100",
 	"theme-primary-faded-background-color": "$palette-primary-800",
 	"theme-primary-background-color": "$palette-primary-300",
 
 	"palette-secondary": "$mt-black",
+	"palette-text-primary": "$mt-white",
 	"palette-text-secondary": "$mt-grey",
 
 	"theme-secondary-color": "$mt-white",
@@ -28,7 +29,7 @@
 	"gbc-TableWidget-even-row-background-color": "$palette-primary-800",
 	"gbc-TableWidget-odd-row-background-color": "$mt-black",
 	"gbc-FolderWidget-tab-current-border-color": "$mt-white",
-	"theme-currentrow-background-color": "$mt-light-blue-400",
+  "theme-currentrow-background-color": "$palette-primary-200",
 	"theme-currentrow-color": "$theme-secondary-color",
 	"mt-field-readonly-background-color": "$palette-primary-800",	
 	"mt-field-border-color": "$theme-primary-background-color",
@@ -38,7 +39,6 @@
 	"mt-button-primary-color": "$palette-text-secondary",
 	
 	"gbc-ButtonWidget-color": "$palette-text-secondary",
-	"njm-button-border-color": "$palette-primary-200",
 	"mt-progress-background-color": "$mt-black"
 
 }

@@ -2,9 +2,15 @@
 /////////////////////////////////////////////////////////////////
 // NJM Demos specific change
 .gbc_style_curvedborder {
-	border: 1px solid $njm-button-border-color;
+	border: 1px solid $palette-primary;
 	border-radius: 1rem;
 	padding: 2px;
 }
-
+.gbc_style_curvedcentered {
+	border: 1px solid $palette-primary;
+	border-radius: 1rem;
+	padding: 2px;
+	display: grid;
+	justify-content: center;
+}
 
