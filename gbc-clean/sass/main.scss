@@ -191,6 +191,8 @@ BODY {
 // Toolbar
 .gbc_ToolBarItemWidget {
 	padding: $njm-toolbarItem-padding;
+	color: $palette-text-secondary;
+	fill: $theme-primary-emphasis-background-color;
 }
 
 // MISC ////////////////////////////////////////////////////////////////////////////

@@ -48,7 +48,7 @@
 	"mt-button-disabled-color": "$palette-primary-100",
 
 	"mt-toolbar-background-color": "$palette-primary-900",
-	"mt-toolbar-color": "$theme-primary-background-color",
+	"mt-toolbar-color": "$mt-white",
 
 	"gbc-DateEdit-color": "$theme-primary-background-color",
 
