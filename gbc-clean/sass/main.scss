@@ -43,8 +43,11 @@ BODY {
 		border-right: 1px solid $mt-field-border-color;
 		padding-right: 0px;
 		.textimage > .gbc_imageContainer > .gbc_ImageWidget {
-			fill: $palette-text-primary;
+			fill: $palette-primary !important;
 		}
+	}
+	.mt-button:hover {
+		background-color: transparent !important;
 	}
 }
 .gbc_ButtonEditWidget.gbc_Focus > .gbc_EditWidget, .gbc_DummyButtonEditWidget.gbc_Focus > .gbc_EditWidget {
@@ -185,6 +188,10 @@ BODY {
 	}
 }
 //////////////////////////////////////////////////////////////////////////////////////
+// Toolbar
+.gbc_ToolBarItemWidget {
+	padding: $njm-toolbarItem-padding;
+}
 
 // MISC ////////////////////////////////////////////////////////////////////////////
 // make the programbar visible but adding a border.
@@ -197,6 +204,5 @@ BODY {
 .loading-bar {
 	height: 5px;
 }
-
 
 

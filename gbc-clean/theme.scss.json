@@ -48,9 +48,12 @@
 	"mt-button-disabled-color": "$palette-primary-100",
 
 	"mt-toolbar-background-color": "$palette-primary-900",
-	"mt-toolbar-color": "$palette-text-primary",
+	"mt-toolbar-color": "$theme-primary-background-color",
+
+	"gbc-DateEdit-color": "$theme-primary-background-color",
 
 	"mt-progress-background-color": "$mt-white",
-	"mt-progress-color": "$palette-primary-400"
+	"mt-progress-color": "$palette-primary-400",
 
+	"njm-toolbarItem-padding": "8px"
 }
