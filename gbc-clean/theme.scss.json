@@ -19,12 +19,16 @@
 	"gbc-TopMenuWidget-horizontal-padding": "8px",
 	"gbc-TopMenuWidget-line-height": "18px",
 
+	"mt-button-margin-ratio": ".6",
+	"mt-progress-height": "20px",
 	"mt-field-border-width-top": "1px",
 	"mt-field-border-width-right": "1px",
 	"mt-field-border-width-bottom": "1px",
 	"mt-field-border-width-left": "1px",
-	"mt-button-margin-ratio": ".6",
-	"mt-progress-height": "20px",
+	"mt-field-focus-border-width-top": "1px",
+	"mt-field-focus-border-width-right": "1px",
+	"mt-field-focus-border-width-bottom": "2px",
+	"mt-field-focus-border-width-left": "1px",
 
 	"palette-primary": "$mt-indigo",
 	"palette-secondary": "$mt-grey",
@@ -40,7 +44,8 @@
 	"theme-currentrow-background-color": "$palette-primary-400",
 	"theme-currentrow-color": "$palette-text-primary",
 
-	"mt-field-border-color": "$theme-primary-background-color",
+	"mt-field-border-color": "$palette-primary-500",
+	"mt-field-focus-border-color": "$palette-primary-900",
 
 	"mt-button-primary-emphasis-background-color": "$palette-primary-700",
 	"mt-button-primary-background-color": "$palette-primary-600",

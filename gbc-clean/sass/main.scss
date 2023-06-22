@@ -14,10 +14,6 @@ BODY {
 }
 // make current field stand out more.
 .mt-field.gbc_Focus {
-	border-left: 1px solid $mt-field-border-color;
-	border-right: 1px solid $mt-field-border-color;
-	border-top: 1px solid $mt-field-border-color;
-	border-bottom: 2px solid $mt-button-primary-background-color;
 	box-shadow: none;
 }
 // Combobox
@@ -34,13 +30,18 @@ BODY {
 	padding: 2px;
 }
 // try and make the buttonEdit button actually look like it's part of the Edit field
+.gbc_ButtonEditWidget > .gbc_ButtonWidget, .gbc_DummyButtonEditWidget > .gbc_ButtonWidget {
+	border-top: $mt-field-border-width-top solid $mt-field-border-color;
+	border-left: 0px;
+	border-bottom: $mt-field-border-width-bottom solid $mt-field-border-color;
+	border-right: $mt-field-border-width-right solid $mt-field-border-color;
+	border-radius: 0 0.2rem 0.2rem 0;
+}
 .gbc_ButtonEditWidget, .gbc_DummyButtonEditWidget {
 	.mt-button {
+		border: none;
+		box-shadow: none;
 		background-color: transparent;
-		border-top: 1px solid $mt-field-border-color;
-		border-left: 0px solid $mt-field-border-color;
-		border-bottom: 1px solid $mt-field-border-color;
-		border-right: 1px solid $mt-field-border-color;
 		padding-right: 0px;
 		.textimage > .gbc_imageContainer > .gbc_ImageWidget {
 			fill: $palette-primary !important;
@@ -50,16 +51,18 @@ BODY {
 		background-color: transparent !important;
 	}
 }
+.gbc_ButtonEditWidget.gbc_Focus > .gbc_ButtonWidget, .gbc_DummyButtonEditWidget.gbc_Focus > .gbc_ButtonWidget {
+	border-top: $mt-field-focus-border-width-top solid $mt-field-focus-border-color;
+	border-bottom: $mt-field-focus-border-width-bottom solid $mt-field-focus-border-color;
+	border-right: $mt-field-focus-border-width-right solid $mt-field-focus-border-color;
+	border-radius: 0 0.2rem 0.2rem 0;
+}
 .gbc_ButtonEditWidget.gbc_Focus > .gbc_EditWidget, .gbc_DummyButtonEditWidget.gbc_Focus > .gbc_EditWidget {
-	border-right: 0px solid $mt-field-border-color;
-	border-left: 1px solid $mt-field-border-color;
-	border-top: 1px solid $mt-field-border-color;
-	border-bottom: 2px solid $mt-button-primary-background-color;
+	border-right: 0px;
 	box-shadow: none;
-	background-color: $palette-primary-50;
 }
 .gbc_ButtonEditWidget .mt-field, .gbc_DummyButtonEditWidget .mt-field {
-	border-right: 0px solid $mt-field-border-color;
+	border-right: 0px;
 }
 //////////////////////////////////////////////////////////////////////////////////////
 
