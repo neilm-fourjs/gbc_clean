@@ -50,7 +50,8 @@
 	"mt-button-primary-emphasis-background-color": "$palette-primary-700",
 	"mt-button-primary-background-color": "$palette-primary-600",
 	"mt-button-primary-color": "$palette-text-primary",
-	"mt-button-disabled-color": "$palette-primary-100",
+	"mt-button-disabled-color": "$palette-primary-300",
+	"mt-button-disabled-background-color": "$palette-primary-100",
 
 	"mt-toolbar-background-color": "$palette-primary-900",
 	"mt-toolbar-color": "$mt-white",
