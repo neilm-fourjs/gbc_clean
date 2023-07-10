@@ -23,13 +23,13 @@
 	"theme-field-background-color": "$mt-black-600",
 	"theme-field-disabled-background-color": "$mt-black-200",
 
-  "mt-field-border-color": "$theme-secondary-faded-color",
+	"mt-field-border-color": "$theme-secondary-faded-color",
 
 	"gbc-TableWidget-unfocused-currentRow-background-color": "$theme-header-color",
 	"gbc-TableWidget-even-row-background-color": "$palette-primary-800",
 	"gbc-TableWidget-odd-row-background-color": "$mt-black",
 	"gbc-FolderWidget-tab-current-border-color": "$mt-white",
-  "theme-currentrow-background-color": "$palette-primary-200",
+	"theme-currentrow-background-color": "$palette-primary-200",
 	"theme-currentrow-color": "$theme-secondary-color",
 	"mt-field-readonly-background-color": "$palette-primary-800",	
 	"mt-field-border-color": "$theme-primary-background-color",
