@@ -6,7 +6,7 @@ include makefile.inc
 BASE=$(shell pwd)
 dirs=$(shell find . -maxdepth 1 -type d -name gbc-\*)
 
-all: distbin gbc-current$(GENVER) subdirs
+all: distbin $(GBCPROJECT) subdirs
 
 distbin:
 	mkdir distbin
